@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Fake News Detection - ML Project">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- subtle grid -->
+  <g opacity="0.12">
+    <defs>
+      <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M60 0H0V60" fill="none" stroke="#94a3b8" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="1600" height="900" fill="url(#grid)"/>
+  </g>
+
+  <!-- nodes and edges -->
+  <g stroke="#22d3ee" stroke-opacity="0.35">
+    <path d="M150 720 C 450 520, 950 820, 1450 540" fill="none" stroke-width="3"/>
+    <path d="M120 480 C 520 300, 980 360, 1520 300" fill="none" stroke-width="2"/>
+  </g>
+
+  <!-- glow orbs -->
+  <circle cx="250" cy="650" r="80" fill="url(#g)" opacity="0.25" filter="url(#soft)"/>
+  <circle cx="1380" cy="380" r="90" fill="url(#g)" opacity="0.25" filter="url(#soft)"/>
+
+  <!-- icon: newspaper + shield-check -->
+  <g transform="translate(200,250)">
+    <rect x="0" y="0" rx="16" ry="16" width="300" height="360" fill="#0f172a" stroke="#22d3ee" stroke-width="4"/>
+    <rect x="30" y="40" width="240" height="40" fill="#1e293b"/>
+    <rect x="30" y="100" width="200" height="24" fill="#1e293b"/>
+    <rect x="30" y="140" width="220" height="24" fill="#1e293b"/>
+    <rect x="30" y="180" width="180" height="24" fill="#1e293b"/>
+    <rect x="30" y="220" width="220" height="24" fill="#1e293b"/>
+    <!-- shield -->
+    <path d="M230 270 l40 0 c20 0 40 -10 40 -10 v60 c0 50 -60 80 -60 80 s-60 -30 -60 -80 v-60 c0 0 20 10 40 10z" fill="url(#g)" opacity="0.9"/>
+    <!-- check -->
+    <path d="M240 320 l20 20 40 -40" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- title text -->
+  <text x="560" y="370" fill="#e2e8f0" font-size="80" font-family="Segoe UI, Roboto, Inter, Arial, sans-serif" font-weight="700">Fake News Detection</text>
+  <text x="560" y="440" fill="#94a3b8" font-size="40" font-family="Segoe UI, Roboto, Inter, Arial, sans-serif" font-weight="500">ML Project • TF‑IDF + ML Classifier</text>
+
+  <!-- badge -->
+  <rect x="560" y="480" rx="10" ry="10" width="420" height="60" fill="rgba(34,211,238,0.12)" stroke="#22d3ee"/>
+  <text x="580" y="520" fill="#67e8f9" font-size="28" font-family="Segoe UI, Roboto, Inter, Arial, sans-serif" font-weight="600">Python • scikit‑learn • Streamlit</text>
+</svg>
+
