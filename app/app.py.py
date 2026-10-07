@@ -15,7 +15,7 @@ Fake News Detector built using:
 
 Developer: **Induri Avinash Reddy**
 🔗 [GitHub](https://github.com/avinashreddy0)
-🌐 [LinkedIn](https://www.linkedin.com/in/avinash-reddy-induri-4662b832a/)
+🌐 [LinkedIn](https://www.linkedin.com/in/avinash-reddy-induri-data-science/)
 """)
 
 st.title('🚨 TruthSeeker AI – Fake News Detection System')
