@@ -1,9 +1,9 @@
 import streamlit as st
 import joblib
 
-vectorizer = joblib.load('for transform.pkl')       # TF-IDF
-label = joblib.load('topredict.pkl')               # LabelEncoder
-model = joblib.load('fack_new_dectorer.pkl')      # Trained model
+vectorizer = joblib.load('for transform.pkl')      
+label = joblib.load('topredict.pkl')               
+model = joblib.load('fack_new_dectorer.pkl')      
 
 
 st.sidebar.title("ℹ️ About")
@@ -20,7 +20,7 @@ Developer: **Induri Avinash Reddy**
 
 st.title('🚨 TruthSeeker AI – Fake News Detection System')
 st.markdown("""
-This app classifies whether a news article is **Real** ✅ or **Fake** ❌.
+This app classifies whether a news article is **Real**  or **Fake** .
 Paste your text below and click Predict.
 """)
 
@@ -45,8 +45,8 @@ if st.button("Predict"):
     
     # display
     if prediction_label == "Fake":
-        st.error(f"❌ Prediction: Fake News ({confidence}% confidence)")
-        st.markdown(f"<h3 style='color:red;'>❌ Fake News ({confidence}%)</h3>", unsafe_allow_html=True)
+        st.error(f" Prediction: Fake News ({confidence}% confidence)")
+        st.markdown(f"<h3 style='color:red;'> Fake News ({confidence}%)</h3>", unsafe_allow_html=True)
     else:
-        st.success(f"✅ Prediction: Real News ({confidence}% confidence)")
-        st.markdown(f"<h3 style='color:green;'>✅ Real News ({confidence}%)</h3>", unsafe_allow_html=True)
+        st.success(f" Prediction: Real News ({confidence}% confidence)")
+        st.markdown(f"<h3 style='color:green;'> Real News ({confidence}%)</h3>", unsafe_allow_html=True)
