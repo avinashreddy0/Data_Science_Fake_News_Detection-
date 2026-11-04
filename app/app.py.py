@@ -3,7 +3,7 @@ import joblib
 
 vectorizer = joblib.load('for transform.pkl')      
 label = joblib.load('topredict.pkl')               
-model = joblib.load('fack_new_dectorer.pkl')      
+model = joblib.load('fack_new_dectorer.pkl')  
 
 
 st.sidebar.title("ℹ️ About")
