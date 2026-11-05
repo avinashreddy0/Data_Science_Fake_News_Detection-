@@ -20,7 +20,7 @@ Developer: **Induri Avinash Reddy**
 
 st.title('🚨 TruthSeeker AI – Fake News Detection System')
 st.markdown("""
-This app classifies whether a news article is **Real**  or **Fake** .
+This app classifies whether a news article is **Real**  or **Fake**
 Paste your text below and click Predict.
 """)
 
